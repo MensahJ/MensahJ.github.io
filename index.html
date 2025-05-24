@@ -10,7 +10,7 @@
             padding: 0;
             box-sizing: border-box;
         }
-
+        
         :root {
             --bg-primary: #f8fafc;
             --bg-secondary: #ffffff;
@@ -25,7 +25,7 @@
             --accent-green: #10b981;
             --accent-red: #dc2626;
         }
-
+        
         [data-theme="dark"] {
             --bg-primary: #000000;
             --bg-secondary: #111111;
@@ -40,7 +40,7 @@
             --accent-green: #10b981;
             --accent-red: #ff6666;
         }
-
+        
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             background: var(--bg-primary);
@@ -49,7 +49,7 @@
             line-height: 1.6;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
-
+        
         .header {
             background: var(--bg-secondary);
             border-bottom: 1px solid var(--border-color);
@@ -57,7 +57,7 @@
             box-shadow: var(--shadow);
             transition: all 0.3s ease;
         }
-
+        
         .header-content {
             max-width: 1600px;
             margin: 0 auto;
@@ -65,25 +65,25 @@
             justify-content: space-between;
             align-items: center;
         }
-
+        
         .header h1 {
             font-size: 1.8em;
             font-weight: 700;
             color: var(--text-primary);
         }
-
+        
         .header-right {
             display: flex;
             align-items: center;
             gap: 20px;
         }
-
+        
         .header-date {
             color: var(--text-secondary);
             font-size: 1em;
             font-weight: 500;
         }
-
+        
         .theme-toggle {
             background: var(--accent-blue);
             color: white;
@@ -98,7 +98,7 @@
             align-items: center;
             gap: 6px;
         }
-
+        
         .theme-toggle:hover {
             transform: translateY(-1px);
             box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
@@ -112,7 +112,7 @@
             grid-template-columns: 1fr 1fr 1fr;
             gap: 30px;
         }
-
+        
         .card {
             background: var(--bg-secondary);
             border: 1px solid var(--border-color);
@@ -121,19 +121,19 @@
             box-shadow: var(--shadow);
             transition: all 0.3s ease;
         }
-
+        
         .card:hover {
             transform: translateY(-2px);
             box-shadow: var(--shadow-hover);
         }
-
+        
         .card-header {
             padding: 20px 25px;
             border-bottom: 1px solid var(--border-color);
             background: var(--bg-tertiary);
             transition: all 0.3s ease;
         }
-
+        
         .card-header h2 {
             font-size: 1.3em;
             font-weight: 600;
@@ -142,17 +142,17 @@
             align-items: center;
             gap: 8px;
         }
-
+        
         .card-header p {
             color: var(--text-secondary);
             margin-top: 4px;
             font-size: 0.9em;
         }
-
+        
         .card-content {
             padding: 25px;
         }
-
+        
         /* Calendar Card */
         .calendar-load-btn {
             background: var(--accent-blue);
@@ -167,18 +167,18 @@
             margin-bottom: 20px;
             transition: all 0.2s ease;
         }
-
+        
         .calendar-load-btn:hover {
             filter: brightness(110%);
             transform: translateY(-1px);
         }
-
+        
         .calendar-load-btn:disabled {
             background: var(--text-tertiary);
             cursor: not-allowed;
             transform: none;
         }
-
+        
         .event-item {
             background: var(--bg-tertiary);
             padding: 15px;
@@ -187,11 +187,11 @@
             border-left: 3px solid var(--accent-blue);
             transition: all 0.3s ease;
         }
-
+        
         .event-item:hover {
             transform: translateX(4px);
         }
-
+        
         .event-time {
             color: var(--accent-blue);
             font-weight: 600;
@@ -199,20 +199,20 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-
+        
         .event-title {
             color: var(--text-primary);
             font-weight: 500;
             margin-top: 4px;
         }
-
+        
         .no-events {
             text-align: center;
             color: var(--text-secondary);
             font-style: italic;
             padding: 30px 20px;
         }
-
+        
         /* Study Progress Card */
         .progress-overview {
             background: var(--bg-tertiary);
@@ -221,7 +221,7 @@
             margin-bottom: 25px;
             transition: all 0.3s ease;
         }
-
+        
         .progress-bar {
             background: var(--border-color);
             border-radius: 6px;
@@ -229,38 +229,38 @@
             overflow: hidden;
             margin: 15px 0;
         }
-
+        
         .progress-fill {
             background: linear-gradient(90deg, var(--accent-green), #059669);
             height: 100%;
             border-radius: 6px;
             transition: width 0.8s ease;
         }
-
+        
         .progress-stats {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 15px;
             margin-top: 15px;
         }
-
+        
         .progress-stat {
             text-align: center;
         }
-
+        
         .progress-stat-value {
             font-size: 1.5em;
             font-weight: 700;
             color: var(--text-primary);
         }
-
+        
         .progress-stat-label {
             color: var(--text-secondary);
             font-size: 0.85em;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-
+        
         .current-week {
             background: var(--text-primary);
             color: var(--bg-secondary);
@@ -269,36 +269,36 @@
             margin-bottom: 20px;
             transition: all 0.3s ease;
         }
-
+        
         .week-title {
             font-size: 1.2em;
             font-weight: 600;
             margin-bottom: 8px;
         }
-
+        
         .week-dates {
             color: var(--text-secondary);
             font-size: 0.9em;
             margin-bottom: 15px;
             opacity: 0.8;
         }
-
+        
         .week-details {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 15px;
         }
-
+        
         .week-detail {
             background: rgba(255,255,255,0.1);
             padding: 12px;
             border-radius: 6px;
         }
-
+        
         [data-theme="dark"] .week-detail {
             background: rgba(0,0,0,0.3);
         }
-
+        
         .week-detail-label {
             color: var(--text-secondary);
             font-size: 0.8em;
@@ -307,12 +307,12 @@
             margin-bottom: 4px;
             opacity: 0.8;
         }
-
+        
         .week-detail-value {
             color: var(--bg-secondary);
             font-weight: 500;
         }
-
+        
         .complete-day-btn {
             background: var(--accent-blue);
             color: white;
@@ -327,43 +327,43 @@
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-
+        
         .complete-day-btn:hover:not(:disabled) {
             transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(59, 130, 246, 0.3);
         }
-
+        
         .complete-day-btn:disabled {
             cursor: not-allowed;
             transform: none;
             opacity: 0.8;
         }
-
+        
         /* Motivation Card */
         .motivation-card {
             background: linear-gradient(135deg, var(--text-primary) 0%, #374151 100%);
             color: var(--bg-secondary);
         }
-
+        
         .motivation-card .card-header {
             background: rgba(0,0,0,0.1);
             border-bottom: 1px solid rgba(255,255,255,0.1);
         }
-
+        
         .motivation-card .card-header h2 {
             color: var(--bg-secondary);
         }
-
+        
         .motivation-card .card-header p {
             color: var(--text-secondary);
             opacity: 0.8;
         }
-
+        
         .quote-container {
             text-align: center;
             padding: 20px 0;
         }
-
+        
         .quote-text {
             font-size: 1.1em;
             font-weight: 500;
@@ -372,39 +372,39 @@
             font-style: italic;
             color: var(--bg-secondary);
         }
-
+        
         .quote-author {
             color: var(--text-secondary);
             font-size: 0.9em;
             font-weight: 600;
             opacity: 0.8;
         }
-
+        
         .study-metrics {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
             margin-top: 25px;
         }
-
+        
         .metric {
             background: rgba(255,255,255,0.1);
             padding: 15px;
             border-radius: 8px;
             text-align: center;
         }
-
+        
         [data-theme="dark"] .metric {
             background: rgba(0,0,0,0.3);
         }
-
+        
         .metric-value {
             font-size: 1.8em;
             font-weight: 700;
             margin-bottom: 5px;
             color: var(--bg-secondary);
         }
-
+        
         .metric-label {
             font-size: 0.8em;
             text-transform: uppercase;
@@ -412,7 +412,7 @@
             color: var(--text-secondary);
             opacity: 0.8;
         }
-
+        
         .phase-indicator {
             background: var(--accent-blue);
             color: white;
@@ -423,14 +423,14 @@
             display: inline-block;
             margin-bottom: 15px;
         }
-
+        
         .loading {
             text-align: center;
             color: var(--text-secondary);
             font-style: italic;
             padding: 20px;
         }
-
+        
         .error {
             background: #fef2f2;
             color: var(--accent-red);
@@ -439,23 +439,23 @@
             border: 1px solid #fecaca;
             margin: 10px 0;
         }
-
+        
         [data-theme="dark"] .error {
             background: #330000;
             border-color: #660000;
         }
-
+        
         .tips-list {
             list-style: none;
         }
-
+        
         .tips-list li {
             padding: 8px 0;
             padding-left: 20px;
             position: relative;
             color: var(--bg-secondary);
         }
-
+        
         .tips-list li::before {
             content: "→";
             position: absolute;
@@ -463,38 +463,38 @@
             color: var(--accent-blue);
             font-weight: bold;
         }
-
+        
         @media (max-width: 1400px) {
             .dashboard {
                 grid-template-columns: 1fr 1fr;
                 gap: 25px;
             }
-
+            
             .motivation-card {
                 grid-column: 1 / -1;
             }
-
+            
             .progress-stats {
                 grid-template-columns: 1fr 1fr;
             }
         }
-
+        
         @media (max-width: 900px) {
             .dashboard {
                 grid-template-columns: 1fr;
                 padding: 20px;
             }
-
+            
             .header {
                 padding: 15px 20px;
             }
-
+            
             .header-content {
                 flex-direction: column;
                 gap: 15px;
                 text-align: center;
             }
-
+            
             .header-right {
                 flex-direction: column;
                 gap: 10px;
@@ -547,12 +547,12 @@
                             <div class="progress-stat-label">Study Days Left</div>
                         </div>
                     </div>
-
+                    
                     <button class="complete-day-btn" id="complete-day-btn" onclick="markDayComplete()">
                         Did You Do Your Part Today?
                     </button>
                 </div>
-
+                
                 <div class="current-week">
                     <div class="week-title" id="week-title">Loading current week...</div>
                     <div class="week-dates" id="week-dates"></div>
@@ -588,7 +588,7 @@
                 <button class="calendar-load-btn" onclick="loadCalendarEvents()">
                     Load Today's Events
                 </button>
-
+                
                 <div id="calendar-content">
                     <div class="no-events">
                         Click above to load your Google Calendar events
@@ -610,7 +610,7 @@
                     </div>
                     <div class="quote-author" id="quote-author">— Success Reality</div>
                 </div>
-
+                
                 <div class="study-metrics">
                     <div class="metric">
                         <div class="metric-value" id="completed-days">0</div>
@@ -621,7 +621,7 @@
                         <div class="metric-label">Total Weeks</div>
                     </div>
                 </div>
-
+                
                 <div style="margin-top: 25px;">
                     <h4 style="margin-bottom: 15px; color: var(--bg-secondary);">This Week's Focus</h4>
                     <ul class="tips-list" id="focus-tips">
@@ -684,10 +684,10 @@
         function toggleTheme() {
             currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
             document.documentElement.setAttribute('data-theme', currentTheme);
-
+            
             const themeIcon = document.getElementById('theme-icon');
             const themeText = document.getElementById('theme-text');
-
+            
             if (currentTheme === 'dark') {
                 themeIcon.textContent = '🌙';
                 themeText.textContent = 'Dark Mode';
@@ -699,32 +699,32 @@
 
         function getCurrentStudyWeek() {
             const today = new Date();
-
+            
             for (let week of studyPlan.weeks) {
                 const weekStart = new Date(week.start);
                 const weekEnd = new Date(week.end);
-
+                
                 if (today >= weekStart && today <= weekEnd) {
                     return week;
                 }
             }
-
+            
             // Return first week if before start date
             return studyPlan.weeks[0];
         }
 
         function markDayComplete() {
             const today = new Date().toDateString();
-
+            
             if (!completedDays[today]) {
                 completedDays[today] = true;
                 updateStreak();
                 updateProgress();
-
+                
                 const button = document.getElementById('complete-day-btn');
                 button.innerHTML = 'Great Work Today!';
                 button.style.background = 'var(--accent-green)';
-
+                
                 setTimeout(() => {
                     button.innerHTML = 'Completed Today';
                     button.disabled = true;
@@ -738,18 +738,84 @@
 
         function updateProgress() {
             const completedCount = Object.keys(completedDays).length;
-            const totalStudyDays = 160; // Approximate total for the journey
+            
+            // Calculate remaining study days from TODAY to end of year
+            const today = new Date();
+            const endDate = new Date('2025-12-31');
+            const examStart = new Date('2025-08-01');
+            const examEnd = new Date('2025-08-31');
+            
+            let remainingStudyDays = 0;
+            let currentDateCalc = new Date(today);
+            
+            // Start counting from tomorrow
+            currentDateCalc.setDate(currentDateCalc.getDate() + 1);
+            
+            while (currentDateCalc <= endDate) {
+                const dayOfWeek = currentDateCalc.getDay();
+                const isWeekend = dayOfWeek === 0 || dayOfWeek === 6; // Sunday or Saturday
+                const isExamPeriod = currentDateCalc >= examStart && currentDateCalc <= examEnd;
+                
+                if (!isWeekend && !isExamPeriod) {
+                    remainingStudyDays++;
+                } else if (isExamPeriod && !isWeekend) {
+                    // Reduced study during exam period (only Mon/Wed)
+                    if (dayOfWeek === 1 || dayOfWeek === 3) {
+                        remainingStudyDays++;
+                    }
+                }
+                
+                currentDateCalc.setDate(currentDateCalc.getDate() + 1);
+            }
+            
+            // Calculate total study days for the entire journey
+            const startDate = new Date('2025-05-25');
+            let totalStudyDays = 0;
+            let totalDateCalc = new Date(startDate);
+            
+            while (totalDateCalc <= endDate) {
+                const dayOfWeek = totalDateCalc.getDay();
+                const isWeekend = dayOfWeek === 0 || dayOfWeek === 6;
+                const isExamPeriod = totalDateCalc >= examStart && totalDateCalc <= examEnd;
+                
+                if (!isWeekend && !isExamPeriod) {
+                    totalStudyDays++;
+                } else if (isExamPeriod && !isWeekend) {
+                    if (dayOfWeek === 1 || dayOfWeek === 3) {
+                        totalStudyDays++;
+                    }
+                }
+                
+                totalDateCalc.setDate(totalDateCalc.getDate() + 1);
+            }
+            
             const progressPercent = (completedCount / totalStudyDays) * 100;
-
+            
+            console.log('Progress calculation:', {
+                today: today.toDateString(),
+                totalStudyDays,
+                remainingStudyDays,
+                completedCount,
+                progressPercent: Math.round(progressPercent * 10) / 10
+            });
+            
+            // Update displays
             document.getElementById('progress-fill').style.width = Math.min(progressPercent, 100) + '%';
             document.getElementById('progress-percentage').textContent = Math.round(progressPercent * 10) / 10 + '%';
             document.getElementById('current-streak').textContent = currentStreak;
             document.getElementById('completed-days').textContent = completedCount;
+            document.getElementById('days-remaining').textContent = remainingStudyDays;
         }
 
         function updateWeekInfo() {
             const currentWeek = getCurrentStudyWeek();
-
+            const today = new Date();
+            
+            // Calculate weeks remaining dynamically
+            const endDate = new Date('2025-12-31');
+            const daysUntilEnd = Math.max(0, Math.ceil((endDate - today) / (1000 * 60 * 60 * 24)));
+            const weeksRemaining = Math.max(0, Math.ceil(daysUntilEnd / 7));
+            
             document.getElementById('current-phase').textContent = currentWeek.phase;
             document.getElementById('week-title').textContent = currentWeek.title;
             document.getElementById('week-dates').textContent = 'Week ' + currentWeek.week;
@@ -757,25 +823,240 @@
             document.getElementById('week-pages').textContent = currentWeek.pages;
             document.getElementById('week-time').textContent = currentWeek.time;
             document.getElementById('week-chapters').textContent = currentWeek.chapters;
-
+            document.getElementById('weeks-remaining').textContent = weeksRemaining;
+            
             // Update quote
             const quoteIndex = (currentWeek.week - 1) % brutalQuotes.length;
             const selectedQuote = brutalQuotes[quoteIndex];
             document.getElementById('motivation-quote').textContent = '"' + selectedQuote.text + '"';
             document.getElementById('quote-author').textContent = '— ' + selectedQuote.author;
+            
+            console.log('Week calculation:', {
+                today: today.toDateString(),
+                currentWeek: currentWeek.week,
+                weeksRemaining,
+                daysUntilEnd
+            });
         }
 
         function loadCalendarEvents() {
+            if (typeof gapi === 'undefined') {
+                loadGoogleAPI();
+                return;
+            }
+            
+            const authInstance = gapi.auth2.getAuthInstance();
+            if (!authInstance) {
+                initGoogleAuth();
+                return;
+            }
+            
+            if (authInstance.isSignedIn.get()) {
+                fetchCalendarEvents();
+            } else {
+                showSignInButton();
+            }
+        }
+
+        function loadGoogleAPI() {
+            const content = document.getElementById('calendar-content');
+            content.innerHTML = '<div class="loading">Loading Google API...</div>';
+            
+            const script = document.createElement('script');
+            script.src = 'https://apis.google.com/js/api.js';
+            script.onload = function() {
+                gapi.load('auth2', initGoogleAuth);
+            };
+            document.head.appendChild(script);
+        }
+
+        function initGoogleAuth() {
+            // Replace with your actual Client ID from Google Cloud Console
+            const CLIENT_ID = 'YOUR_CLIENT_ID_HERE.apps.googleusercontent.com';
+            
+            gapi.auth2.init({
+                client_id: CLIENT_ID,
+                scope: 'https://www.googleapis.com/auth/calendar.readonly'
+            }).then(function() {
+                const authInstance = gapi.auth2.getAuthInstance();
+                
+                // Listen for sign-in state changes
+                authInstance.isSignedIn.listen(updateSignInStatus);
+                
+                // Handle initial sign-in state
+                updateSignInStatus(authInstance.isSignedIn.get());
+            }).catch(function(error) {
+                console.error('Auth initialization error:', error);
+                showCalendarError('Failed to initialize Google authentication');
+            });
+        }
+
+        function updateSignInStatus(isSignedIn) {
+            if (isSignedIn) {
+                fetchCalendarEvents();
+            } else {
+                showSignInButton();
+            }
+        }
+
+        function signInToGoogle() {
+            const authInstance = gapi.auth2.getAuthInstance();
+            authInstance.signIn().catch(function(error) {
+                console.error('Sign-in error:', error);
+                showCalendarError('Failed to sign in to Google');
+            });
+        }
+
+        function signOutFromGoogle() {
+            const authInstance = gapi.auth2.getAuthInstance();
+            authInstance.signOut();
+        }
+
+        function showSignInButton() {
             const content = document.getElementById('calendar-content');
             content.innerHTML = `
-                <div style="margin-bottom: 20px;">
-                    <h4 style="color: var(--text-primary); margin-bottom: 15px;">Calendar Integration</h4>
-                    <div class="event-item">
-                        <div class="event-time">Setup Required</div>
-                        <div class="event-title">
-                            To connect your Google Calendar, host this dashboard on GitHub Pages and add Google Calendar API integration.
-                        </div>
+                <div style="text-align: center; padding: 20px;">
+                    <h4 style="color: var(--text-primary); margin-bottom: 15px;">Connect Your Google Calendar</h4>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px; font-size: 0.9em;">
+                        Sign in to view your daily schedule alongside your PLC study progress
+                    </p>
+                    <button onclick="signInToGoogle()" style="
+                        background: #4285f4;
+                        color: white;
+                        border: none;
+                        padding: 12px 24px;
+                        border-radius: 8px;
+                        cursor: pointer;
+                        font-size: 1em;
+                        font-weight: 600;
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        margin: 0 auto;
+                        transition: all 0.3s ease;
+                    " onmouseover="this.style.background='#3367d6'" onmouseout="this.style.background='#4285f4'">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                        Sign in with Google
+                    </button>
+                    <p style="color: var(--text-tertiary); font-size: 0.8em; margin-top: 15px;">
+                        We only access your calendar data. No data is stored on our servers.
+                    </p>
+                </div>
+            `;
+        }
+
+        function fetchCalendarEvents() {
+            const content = document.getElementById('calendar-content');
+            content.innerHTML = '<div class="loading">Loading today\'s events...</div>';
+            
+            gapi.load('client', function() {
+                gapi.client.init({
+                    discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest'],
+                }).then(function() {
+                    // Get today's events
+                    const today = new Date();
+                    const timeMin = new Date(today.getFullYear(), today.getMonth(), today.getDate()).toISOString();
+                    const timeMax = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1).toISOString();
+                    
+                    return gapi.client.calendar.events.list({
+                        'calendarId': 'primary',
+                        'timeMin': timeMin,
+                        'timeMax': timeMax,
+                        'showDeleted': false,
+                        'singleEvents': true,
+                        'orderBy': 'startTime'
+                    });
+                }).then(function(response) {
+                    displayCalendarEvents(response.result.items || []);
+                }).catch(function(error) {
+                    console.error('Calendar fetch error:', error);
+                    showCalendarError('Failed to load calendar events');
+                });
+            });
+        }
+
+        function displayCalendarEvents(events) {
+            const content = document.getElementById('calendar-content');
+            
+            if (events.length === 0) {
+                content.innerHTML = `
+                    <div style="text-align: center; padding: 20px;">
+                        <h4 style="color: var(--text-primary); margin-bottom: 10px;">No Events Today</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9em;">Perfect day to focus on your PLC studies!</p>
+                        <button onclick="signOutFromGoogle()" style="
+                            background: var(--text-tertiary);
+                            color: white;
+                            border: none;
+                            padding: 8px 16px;
+                            border-radius: 6px;
+                            cursor: pointer;
+                            font-size: 0.8em;
+                            margin-top: 15px;
+                        ">Sign Out</button>
                     </div>
+                `;
+                return;
+            }
+            
+            let eventsHTML = `
+                <div style="margin-bottom: 20px;">
+                    <div style="display: flex; justify-content: between; align-items: center; margin-bottom: 15px;">
+                        <h4 style="color: var(--text-primary);">Today's Events</h4>
+                        <button onclick="signOutFromGoogle()" style="
+                            background: var(--text-tertiary);
+                            color: white;
+                            border: none;
+                            padding: 6px 12px;
+                            border-radius: 4px;
+                            cursor: pointer;
+                            font-size: 0.7em;
+                        ">Sign Out</button>
+                    </div>
+            `;
+            
+            events.forEach(event => {
+                const startTime = event.start.dateTime || event.start.date;
+                const endTime = event.end.dateTime || event.end.date;
+                
+                let timeDisplay = 'All Day';
+                if (event.start.dateTime) {
+                    const start = new Date(startTime);
+                    const end = new Date(endTime);
+                    timeDisplay = `${start.toLocaleTimeString('en-US', {hour: 'numeric', minute: '2-digit'})} - ${end.toLocaleTimeString('en-US', {hour: 'numeric', minute: '2-digit'})}`;
+                }
+                
+                // Highlight PLC/Study related events
+                const isStudyEvent = event.summary && (
+                    event.summary.toLowerCase().includes('plc') ||
+                    event.summary.toLowerCase().includes('study') ||
+                    event.summary.toLowerCase().includes('learning')
+                );
+                
+                eventsHTML += `
+                    <div class="event-item" style="${isStudyEvent ? 'border-left-color: var(--accent-green); background: linear-gradient(90deg, var(--bg-tertiary), rgba(16, 185, 129, 0.1));' : ''}">
+                        <div class="event-time">${timeDisplay} ${isStudyEvent ? '📚' : ''}</div>
+                        <div class="event-title">${event.summary || 'No title'}</div>
+                        ${event.location ? `<div style="color: var(--text-secondary); font-size: 0.9em; margin-top: 4px;">📍 ${event.location}</div>` : ''}
+                        ${event.description ? `<div style="color: var(--text-secondary); font-size: 0.8em; margin-top: 4px; opacity: 0.8;">${event.description.substring(0, 100)}${event.description.length > 100 ? '...' : ''}</div>` : ''}
+                    </div>
+                `;
+            });
+            
+            eventsHTML += '</div>';
+            content.innerHTML = eventsHTML;
+        }
+
+        function showCalendarError(message) {
+            const content = document.getElementById('calendar-content');
+            content.innerHTML = `
+                <div class="error">
+                    ${message}
+                    <br><small>Check the console for more details.</small>
                 </div>
             `;
         }
@@ -789,11 +1070,11 @@
                 month: 'long',
                 day: 'numeric'
             });
-
+            
             // Update all sections
             updateWeekInfo();
             updateProgress();
-
+            
             // Check if day already completed
             const today = new Date().toDateString();
             if (completedDays[today]) {
